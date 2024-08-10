@@ -1,0 +1,38 @@
+body {
+    padding: 30px;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif; /* Added for better typography */
+}
+
+code {
+    padding: 5px 8px;
+    border-radius: 18px;
+    background-color: #f8f9f9;
+    color: #cc0066;
+}
+
+[type='color'] {
+    appearance: none;
+    padding: 0;
+    width: 40px; /* Increased for better visibility */
+    height: 40px; /* Increased for better visibility */
+    border: none;
+    cursor: pointer;
+}
+
+[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+[type='color']::-webkit-color-swatch {
+    border: none;
+}
+
+.color-picker {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f9f9;
+    display: inline-block; /* Added to make sure it doesn't stretch to full width */
+}
