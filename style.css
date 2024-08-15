@@ -1,38 +1,88 @@
+/* Adding Embed of Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-    padding: 30px;
-    display: grid;
-    place-items: center;
-    font-family: Arial, sans-serif; /* Added for better typography */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  /* Added for better typography */
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.intro {
+  font-family: 'Space Mono';
+  font-size: 25px;
+  background-color: #cc0066;
+  padding: 10px 25px;
+  border-radius: 100px;
+  font-weight: 600;
+  color: white;
+
 }
 
 code {
-    padding: 5px 8px;
-    border-radius: 18px;
-    background-color: #f8f9f9;
-    color: #cc0066;
+  padding: 5px 8px;
+  border-radius: 18px;
+  background-color: #f8f9f9;
+  color: #cc0066;
 }
 
 [type='color'] {
-    appearance: none;
-    padding: 0;
-    width: 40px; /* Increased for better visibility */
-    height: 40px; /* Increased for better visibility */
-    border: none;
-    cursor: pointer;
+  appearance: none;
+  padding: 0;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
 }
 
 [type='color']::-webkit-color-swatch-wrapper {
-    padding: 0;
+  padding: 0;
 }
 
 [type='color']::-webkit-color-swatch {
-    border: none;
+  border: none;
 }
 
 .color-picker {
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    background-color: #f8f9f9;
-    display: inline-block; /* Added to make sure it doesn't stretch to full width */
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 30px;
+  padding: 25px 25px;
+  border: 4px solid black;
+}
+
+.color-picker label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.color-picker label input {
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.color-picker label span {
+  font-family: 'Space Mono';
+  font-size: 42px;
+  font-weight: 600;
 }
